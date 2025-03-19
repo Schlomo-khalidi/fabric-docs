@@ -55,7 +55,7 @@ Read raw data from the **Files** section of the lakehouse. You uploaded this dat
 ```python
 df = (
     spark.read.option("header", True)
-    .option("inferSchema", True)
+    .option("Header", True)
     .csv("Files/churn/raw/churn.csv")
     .cache()
 )
